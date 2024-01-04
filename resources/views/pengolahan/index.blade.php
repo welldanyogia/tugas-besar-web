@@ -9,7 +9,7 @@
 <body>
 
 <div class="input-container" id="form1-container">
-    <h2>Pelayanan Penilitian</h2>
+    <h2>Pengolaan Jurnal</h2>
 
     <form action="{{ route('pengolahan.store1') }}" method="post" class="form active" id="firstForm">
         @csrf
@@ -28,7 +28,7 @@
         <input type="text" id="lokasi" name="lokasi" required><br>
 
 
-        <label for="masa_kegiatan">masa kegiatan:</label>
+        <label for="masa_kegiatan">Peran:</label>
         <div class="masa_kegiatan">
             <select id="masa_kegiatan" name="masa_kegiatan" required>
                 <option value="" disabled selected>Select One</option>
@@ -37,14 +37,12 @@
             </select>
         </div><br>
 
-        <label for="tingkat_kegiatan">tingkat kegiatan:</label>
+        <label for="tingkat_kegiatan">tingkat pengolaan:</label>
         <div class="tingkat_kegiatan">
             <select id="tingkat_kegiatan" name="tingkat_kegiatan" required>
                 <option value="" disabled selected>Select One</option>
                 <option value="Internasional">Internasional</option>
                 <option value="Nasional"> Nasional</option>
-                <option value="Lokal">Lokal</option>
-                <option value="Insedensial"> Insedensial</option>
             </select>
         </div><br>
 

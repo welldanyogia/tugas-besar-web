@@ -7,7 +7,10 @@
     <title>Lengkapi Data</title>
 </head>
 <body>
+
+
 <div class="input-container" id="form2-container">
+    <h2>Pengolaan Jurnal</h2>
     <h2>Pengolahan Penilitian</h2>
 
     <form action="{{ route('pengolahan.store2') }}" method="post" class="form" id="secondForm">
@@ -34,6 +37,8 @@
         <button type="submit">Next</button>
     </form>
 </div>
+
+
 <script>
     function showForm(formId) {
         document.getElementById('form1-container').style.display = 'none';
