@@ -6,6 +6,7 @@ use App\Models\Jabatan;
 use App\Models\Pelayanan;
 use App\Models\Pengabdian;
 use App\Models\Pengembangan;
+use App\Models\Pengolahan;
 use App\Models\Penulisan;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Auth;
@@ -20,6 +21,7 @@ class TranskripController extends Controller
         $pengabdianData = Pengabdian::where('user_id', Auth::user()->id)->get();
         $pengembanganData = Pengembangan::where('user_id', Auth::user()->id)->get();
         $penulisanData = Penulisan::where('user_id', Auth::user()->id)->get();
+        $pengolahanData = Pengolahan::where('user_id', Auth::user()->id)->get();
 
         return view('transkrip.index', [
             'jabatanData' => $jabatanData,
@@ -27,6 +29,7 @@ class TranskripController extends Controller
             'pengabdianData' => $pengabdianData,
             'pengembanganData' => $pengembanganData,
             'penulisanData' => $penulisanData,
+            'pengolahanData' => $pengolahanData,
         ]);
     }
 }

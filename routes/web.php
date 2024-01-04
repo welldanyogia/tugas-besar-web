@@ -27,6 +27,8 @@ Route::get('/jabatan/form2', [\App\Http\Controllers\JabatanController::class,'fo
 Route::get('/jabatan/form3', [\App\Http\Controllers\JabatanController::class,'form3'])->name('jabatan.form3');
 Route::get('/pengabdian/form2', [\App\Http\Controllers\PengabdianController::class,'form2'])->name('pengabdian.form2');
 Route::get('/pengabdian/form3', [\App\Http\Controllers\PengabdianController::class,'form3'])->name('pengabdian.form3');
+Route::get('/pengolahan/form2', [\App\Http\Controllers\PengolahanController::class,'form2'])->name('pengolahan.form2');
+Route::get('/pengolahan/form3', [\App\Http\Controllers\PengolahanController::class,'form3'])->name('pengolahan.form3');
 Route::get('/pengembangan/form2', [\App\Http\Controllers\PengembanganController::class,'form2'])->name('pengembangan.form2');
 Route::get('/pengembangan/form3', [\App\Http\Controllers\PengembanganController::class,'form3'])->name('pengembangan.form3');
 Route::get('/pelayanan/form2', [\App\Http\Controllers\PelayananController::class,'form2'])->name('pelayanan.form2');
@@ -63,6 +65,10 @@ Route::post('/pelayanan/store3', [\App\Http\Controllers\PelayananController::cla
 Route::post('/penulisan/store1', [\App\Http\Controllers\PenulisanController::class, 'storeForm1'])->name('penulisan.store1');
 Route::post('/penulisan/store2', [\App\Http\Controllers\PenulisanController::class, 'storeForm2'])->name('penulisan.store2');
 Route::post('/penulisan/store3', [\App\Http\Controllers\PenulisanController::class, 'storeForm3'])->name('penulisan.store3');
+//Pengolahan
+Route::post('/pengolahan/store1', [\App\Http\Controllers\PengolahanController::class, 'storeForm1'])->name('pengolahan.store1');
+Route::post('/pengolahan/store2', [\App\Http\Controllers\PengolahanController::class, 'storeForm2'])->name('pengolahan.store2');
+Route::post('/pengolahan/store3', [\App\Http\Controllers\PengolahanController::class, 'storeForm3'])->name('pengolahan.store3');
 
 Route::get('/download/{fileType}/{fileName}', [JabatanController::class, 'downloadFile'])
     ->name('download.file');
