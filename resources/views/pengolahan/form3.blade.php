@@ -9,7 +9,7 @@
 <body>
 
 {{--<div class="input-container" id="form1-container">--}}
-{{--    <h2>Pengembangan Penilitian</h2>--}}
+{{--    <h2>Pengolaan Jurnal</h2>--}}
 
 {{--    <form action="{{ route('pengabdian.store1') }}" method="post" class="form active" id="firstForm">--}}
 {{--        @csrf--}}
@@ -83,7 +83,7 @@
 {{--</div>--}}
 
 <div class="input-container" id="form3-container">
-    <h2>Pelayanan Penilitian</h2>
+    <h2>Pengolaan Jurnal</h2>
 
     <form action="{{ route('pengabdian.store3') }}" method="post" class="form" id="thirdForm" enctype="multipart/form-data">
         @csrf

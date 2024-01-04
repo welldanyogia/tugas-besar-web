@@ -32,26 +32,19 @@
         <div class="masa">
             <select id="masa" name="masa" required>
                 <option value="" disabled selected>Select One</option>
-                <option value="Semester 1">Semester 1</option>
-                <option value="Semester 2">Semester 2</option>
-                <option value="Semester 3">Semester 3</option>
-                <option value="Semester 4">Semester 4</option>
-                <option value="Semester 5">Semester 5</option>
-                <option value="Semester 6">Semester 6</option>
-                <option value="Semester 7">Semester 7</option>
-                <option value="Semester 8">Semester 8</option>
+                <option value="Semester Ganjil">Semester 1</option>
+                <option value="Semester Genap">Semester 2</option>
+
             </select>
         </div>
         <br />
 
-        <label for="tingkat">Tingkat Karya Tulis:</label>
+        <label for="tingkat">Jenis:</label>
         <div class="tingkat">
             <select id="tingkat" name="tingkat" required>
                 <option value="" disabled selected>Select One</option>
-                <option value="Internasional">Internasional</option>
-                <option value="Nasional">Nasional</option>
-                <option value="Lokal">Lokal</option>
-                <option value="Insedensial">Insedensial</option>
+                <option value="Internasional">Tidak Publikasi</option>
+                <option value="Nasional">Publikasi</option>
             </select>
         </div>
         <br />
